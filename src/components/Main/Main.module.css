@@ -1,5 +1,5 @@
 .mainBlock {
-    height: 100vh;
+    min-height: 100vh;
     background: #FFDEE9;
 
 }
@@ -26,6 +26,10 @@
 }
 
 @media screen and (max-width: 752px){
+    .mainBlock {
+        min-height: 100vh;
+    }
+
     .mainContainer {
         justify-content: center;
     }
