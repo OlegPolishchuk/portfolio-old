@@ -18,3 +18,11 @@
     justify-content: space-between;
     width: 100%;
 }
+
+@media screen and (max-width: 880px) {
+    .projectsContainer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

@@ -1,0 +1,21 @@
+.contactsBlock {
+    background: #FFE2E2;
+}
+
+.contacts {
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title {
+    background: #D8D8D8;
+}
+
+.btnForm {
+    padding: 10px 20px;
+    background: #919391;
+    color: #000;
+}
