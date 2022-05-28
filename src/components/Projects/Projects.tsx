@@ -7,7 +7,9 @@ const Projects = () => {
     return (
         <section className={s.projectsBlock}>
             <div className={`${sContainer.container} ${s.projects}`}>
-                <h2 className={s.title}>Projects</h2>
+                <div>
+                    <h2 className={s.title}>Projects</h2>
+                </div>
                 <div className={s.projectsContainer}>
                     <Project/>
                     <Project/>
