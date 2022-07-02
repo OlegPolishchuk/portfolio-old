@@ -7,24 +7,23 @@
 }
 
 .mainContainer {
-    height: 100%;
+    min-height: 100%;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    text-align: center;
 }
 
 .title{
-    width: 300px;
     background-color: #D8D8D8;
-}
-
-.photo {
-    width: 300px;
-    height: 400px;
-
-    background-color: #D8D8D8;
+  span {
+    font-size: 28px;
+  }
+  h1 {
+    font-size: 40px;
+    margin: 20px 0;
+  }
+  p {
+    font-size: 28px;
+  }
 }
 
 @media screen and (max-width: 752px){
@@ -34,9 +33,7 @@
 
     .title {
         margin-bottom: 20px;
+        width: 300px;
     }
 
-    .mainContainer {
-        justify-content: center;
-    }
 }
