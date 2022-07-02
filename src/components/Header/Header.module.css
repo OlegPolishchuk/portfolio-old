@@ -1,6 +1,7 @@
 .header {
-    height: 80px;
-    background: #CFEAFF;
+    /*height: 80px;*/
+    /*background: #CFEAFF;*/
+    height: 100vh;
 }
 
 .container {
