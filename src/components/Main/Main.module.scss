@@ -1,6 +1,8 @@
+@import "./src/common/styles/sass/variables";
+
 .mainBlock {
     min-height: 100vh;
-    background: #FFDEE9;
+    background: $bgSecondColor;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,7 +15,7 @@
 }
 
 .title{
-    background-color: #D8D8D8;
+  color: $textColor;
   span {
     font-size: 28px;
   }

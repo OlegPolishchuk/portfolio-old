@@ -1,5 +1,7 @@
+@import './src/common/styles/sass/variables';
+
 .footer {
-    background: #EBFFE4;
+    background: $bgThirdColor;
 }
 
 .container {
