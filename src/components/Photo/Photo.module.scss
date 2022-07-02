@@ -2,6 +2,7 @@
 @import './src/common/styles/sass/mixins';
 
 .photoContainer {
+  margin-bottom: 25px;
   .photo {
     width: 176px;
     height: 176px;
@@ -18,8 +19,7 @@
     color: $textColor;
 
     margin-top: 30px;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 400;
-    //@include text('Poppins, sans-serif', 26px, 1.2);
   }
 }
