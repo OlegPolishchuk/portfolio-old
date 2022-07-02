@@ -1,0 +1,25 @@
+@import './src/common/styles/sass/variables';
+@import './src/common/styles/sass/mixins';
+
+.photoContainer {
+  .photo {
+    width: 176px;
+    height: 176px;
+    border-radius: 50%;
+
+    border: 5px solid $bgSecondColor;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+  }
+  .title {
+    color: $textColor;
+
+    margin-top: 30px;
+    font-size: 28px;
+    font-weight: 400;
+    //@include text('Poppins, sans-serif', 26px, 1.2);
+  }
+}

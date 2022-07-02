@@ -1,12 +1,28 @@
+@import './src/common/styles/sass/variables';
+
 .header {
-    /*height: 80px;*/
-    /*background: #CFEAFF;*/
-    height: 100vh;
+  height: 100vh;
+
+  .aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+
+    width: 260px;
+    background: $bgThirdColor;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 40px 0;
+  }
 }
 
 .container {
-    height: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
