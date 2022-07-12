@@ -1,3 +1,5 @@
+@import "./src/common/styles/sass/variables";
+
 .title {
     margin-bottom: 30px;
 
@@ -9,7 +11,7 @@
         left: 50%;
         transform: translate(-50%, 50%);
 
-        background: #4e93e6;
+        background: $themeColor;
         width: 100px;
         height: 2px;
     }

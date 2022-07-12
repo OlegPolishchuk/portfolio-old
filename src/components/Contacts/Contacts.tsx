@@ -5,11 +5,14 @@ import Form from "../Form/Form";
 import Title from "../../common/components/title/Title";
 
 const Contacts = () => {
+
+  const formMarginTop = {'marginTop': '30px'}
+
   return (
     <section className={s.contactsBlock}>
       <div className={`${sContainer.container} ${s.contacts}`}>
         <Title title={'Contacts'}/>
-        <Form/>
+        <Form style={formMarginTop}/>
         <a href={''} className={s.btnForm}>Send</a>
       </div>
     </section>
