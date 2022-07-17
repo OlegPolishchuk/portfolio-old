@@ -1,24 +1,43 @@
-.form {
-    width: 350px;
-    border: 1px solid;
+@import './src/common/styles/sass/variables';
 
-    display: flex;
-    flex-direction: column;
+.form {
+  width: 350px;
+
+  display: flex;
+  flex-direction: column;
 }
 
 .input {
-    padding: 8px;
-    margin-bottom: 20px;
+  padding: 8px;
+  margin-bottom: 20px;
+
+  border-radius: 5px;
+  border: 1px solid transparent;
+
+  outline: none;
+
+  &:focus {
+    border: 1px solid $themeColor;
+    box-shadow: 0 0 5px rgba(36, 252, 175, 0.6);
+  }
 }
 
 .textarea {
-    padding: 8px;
-    resize: none;
-    min-height: 120px;
+  padding: 8px;
+  resize: none;
+  min-height: 120px;
+
+  outline: none;
+  border-radius: 5px;
+
+  &:focus {
+    border: 1px solid $themeColor;
+    box-shadow: 0 0 5px rgba(36, 252, 175, 0.6);
+  }
 }
 
-@media screen and (max-width: 450px){
-    .form {
-        width: 100%;
-    }
+@media screen and (max-width: 450px) {
+  .form {
+    width: 100%;
+  }
 }
