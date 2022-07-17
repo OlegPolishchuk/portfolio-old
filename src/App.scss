@@ -18,6 +18,25 @@
     &:nth-child(even) {
       background: $bgSecondColor;
     }
+
+  }
+
+  .faGithub {
+    &:hover {
+      color: $iconGitHubColor
+    }
+  }
+
+  .faLinkedinIn {
+    &:hover {
+      color: $iconLinkedInColor;
+    }
+  }
+
+  .faEnvelope {
+    &:hover {
+      color: $iconGmailColor;
+    }
   }
 
   @media screen and (max-width: $mediumScreen){

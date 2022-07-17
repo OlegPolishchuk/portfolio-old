@@ -1,0 +1,17 @@
+@import './src/common/styles/sass/variables';
+
+.social {
+  a {
+    font-size: 32px;
+    color: $textSecondColor;
+
+    transition: all .2s ease;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .social {
+    width: 50px;
+    height: 50px;
+  }
+}

@@ -13,9 +13,9 @@ const Footer = () => {
             <div className={`${sContainer.container} ${s.container}`}>
                 <h2 className={s.title}>Follow me</h2>
                 <div className={s.socialsBlock}>
-                    <Social icon={faGithub}/>
-                    <Social icon={faLinkedinIn}/>
-                    <Social icon={faEnvelope}/>
+                    <Social icon={faGithub} className={'faGithub'}/>
+                    <Social icon={faLinkedinIn} className={'faLinkedinIn'}/>
+                    <Social icon={faEnvelope} className={'faEnvelope'}/>
 
                 </div>
                 <span className={s.copyright}>2022</span>
