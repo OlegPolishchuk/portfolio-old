@@ -11,14 +11,13 @@ const Footer = () => {
     return (
         <footer className={s.footer}>
             <div className={`${sContainer.container} ${s.container}`}>
-                <h2 className={s.title}>Follow me</h2>
                 <div className={s.socialsBlock}>
                     <Social icon={faGithub} className={'faGithub'}/>
                     <Social icon={faLinkedinIn} className={'faLinkedinIn'}/>
                     <Social icon={faEnvelope} className={'faEnvelope'}/>
 
                 </div>
-                <span className={s.copyright}>2022</span>
+                <span className={s.copyright}>Copyright © 2022. All Rights Reserved.</span>
             </div>
 
         </footer>
