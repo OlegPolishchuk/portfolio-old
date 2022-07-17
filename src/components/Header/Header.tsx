@@ -5,6 +5,9 @@ import {Main} from "../Main/Main";
 import Photo from "../Photo/Photo";
 import {ToggleBtn} from "../../common/components/ToggleBtn/ToggleBtn";
 
+const SHOW_NAV_VALUE = '55px';
+const HIDE_NAV_VALUE = '-250px';
+
 export const Header = () => {
 
   const [visible, setVisible] = useState(false)
@@ -14,7 +17,7 @@ export const Header = () => {
     console.log('toggle')
   }
 
-  const topValue = visible ? '70px' : '-200px';
+  const topValue = visible ? SHOW_NAV_VALUE : HIDE_NAV_VALUE;
 
   const style = {
     top: `${topValue}`
