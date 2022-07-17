@@ -2,7 +2,7 @@
 
 .header {
   height: 100vh;
-  background: $bgColor;
+  background: $bgAsideColor;
 
   .aside {
     position: fixed;
@@ -11,13 +11,30 @@
     bottom: 0;
 
     width: 260px;
-    background: $bgThirdColor;
+    background: $bgAsideColor;
 
     display: flex;
     flex-direction: column;
     align-items: center;
 
     padding: 40px 0;
+
+    @media screen and (max-width: $mediumScreen){
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+
+
+      padding: 0 15px;
+    }
+  }
+}
+
+@media screen and (max-width: $mediumScreen) {
+  .header {
+    display: flex;
+    flex-direction: column;
   }
 }
 

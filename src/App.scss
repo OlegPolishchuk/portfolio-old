@@ -19,6 +19,9 @@
       background: $bgSecondColor;
     }
   }
-}
 
+  @media screen and (max-width: $mediumScreen){
+    margin-left: 0;
+  }
+}
 

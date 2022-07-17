@@ -20,3 +20,14 @@
     }
   }
 }
+
+@media screen and (max-width: $mediumScreen){
+  .nav {
+    margin-top: 15px;
+    padding: 10px 0;
+
+    width: 100%;
+
+    border-top: 2px solid $themeColor;
+  }
+}
