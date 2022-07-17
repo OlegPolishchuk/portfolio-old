@@ -1,25 +1,56 @@
-.skillBlock {
-  width: 250px;
-  background-color: #FDFFFE;
+@import './src/common/styles/sass/variables';
+//.skillBlock {
+//  width: 250px;
+//  background-color: #FDFFFE;
+//
+//  display: flex;
+//  flex-direction: column;
+//
+//  align-items: center;
+//  text-align: center;
+//
+//  padding: 20px;
+//  margin: 20px 0;
+//}
+//
+//.skillTitle {
+//  margin-bottom: 10px;
+//}
+//
+//.icon {
+//  width: 60px;
+//  height: 60px;
+//  background-color: #C4C4C4;
+//
+//  margin-bottom: 20px;
+//}
 
-  display: flex;
-  flex-direction: column;
+.skillWrapper {
+  width: 48%;
+  margin-bottom: 25px;
 
-  align-items: center;
-  text-align: center;
+  .skillTitle{
+    display: flex;
+    justify-content: space-between;
 
-  padding: 20px;
-  margin: 20px 0;
-}
+    color: $textSecondColor;
+    font-size: 20px;
+  }
 
-.skillTitle {
-  margin-bottom: 10px;
-}
+  .progressBlock {
+    height: 10px;
+    border-radius: 5px;
 
-.icon {
-  width: 60px;
-  height: 60px;
-  background-color: #C4C4C4;
+    position: relative;
 
-  margin-bottom: 20px;
+    background: $bgAsideColor;
+  }
+
+  .progress {
+    height: 10px;
+
+    border-radius: 5px 0 0 5px;
+
+    background: $themeColor;
+  }
 }

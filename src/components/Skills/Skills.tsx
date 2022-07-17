@@ -14,11 +14,11 @@ export const Skills = () => {
                 {/*<h2 className={s.title}>Skills</h2>*/}
                 <Title title={'Skills'} />
                 <div className={s.skills}>
-                    <Skill title={'JS'} description={'descr qwefqwef'}/>
-                    <Skill title={'react'} description={descr}/>
-                    <Skill title={'redux'} description={descr}/>
-                    <Skill title={'html'} description={descr}/>
-                    <Skill title={'css'} description={'descr'}/>
+                    <Skill title={'JS'} progress={90}/>
+                    <Skill title={'react'} progress={80}/>
+                    <Skill title={'redux'} progress={70}/>
+                    <Skill title={'html'} progress={90}/>
+                    <Skill title={'css'} progress={100}/>
                 </div>
             </div>
         </section>
