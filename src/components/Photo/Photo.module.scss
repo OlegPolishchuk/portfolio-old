@@ -15,6 +15,8 @@
     background-repeat: no-repeat;
     text-align: center;
 
+    z-index: 1000;
+
   }
   .title {
     color: $textColor;
@@ -27,6 +29,9 @@
 
 @media screen and (max-width: $mediumScreen){
   .photoContainer {
+    width: 100%;
+    background: $bgAsideColor;
+    z-index: 10;
 
     .photo {
       display: none;
@@ -34,6 +39,9 @@
 
     .title {
       text-align: center;
+    }
+
+    a {
     }
 
   }
