@@ -1,16 +1,14 @@
 import React from 'react';
-import sContainer from '../../common/styles/Container.module.css';
 import s from './Footer.module.scss';
 import Social from "./Social/Social";
 import {faGithub, faLinkedinIn} from "@fortawesome/free-brands-svg-icons";
 import {faEnvelope} from "@fortawesome/free-regular-svg-icons";
 
 
-
 const Footer = () => {
     return (
         <footer className={s.footer}>
-            <div className={`${sContainer.container} ${s.container}`}>
+            <div className={s.container}>
                 <div className={s.socialsBlock}>
                     <Social icon={faGithub} className={'faGithub'}/>
                     <Social icon={faLinkedinIn} className={'faLinkedinIn'}/>

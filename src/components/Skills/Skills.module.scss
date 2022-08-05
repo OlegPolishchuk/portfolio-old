@@ -1,9 +1,7 @@
-.skillsBlock {
-  min-height: 100vh;
-  background-color: #DDFEE9;
-}
+@import "./src/common/styles/sass/mixins";
 
 .skillsContainer {
+  @include container();
   height: 100%;
 
   display: flex;

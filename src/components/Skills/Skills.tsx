@@ -1,6 +1,5 @@
 import React from "react";
 import s from './Skills.module.scss'
-import sContainer from '../../common/styles/Container.module.css'
 import {Skill} from "./Skill/Skill";
 import Title from "../../common/components/title/Title";
 
@@ -10,8 +9,7 @@ export const Skills = () => {
 
     return (
         <section className={s.skillsBlock}>
-            <div className={`${sContainer.container} ${s.skillsContainer}`}>
-                {/*<h2 className={s.title}>Skills</h2>*/}
+            <div className={s.skillsContainer}>
                 <Title title={'Skills'} />
                 <div className={s.skills}>
                     <Skill title={'JS'} progress={90}/>

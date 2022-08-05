@@ -1,8 +1,11 @@
+@import "./src/common/styles/sass/mixins";
+
 .contactsBlock {
   background: #FFE2E2;
 }
 
 .contacts {
+  @include container();
   min-height: 350px;
   display: flex;
   flex-direction: column;

@@ -1,14 +1,16 @@
 @import "./src/common/styles/sass/variables";
+@import "./src/common/styles/sass/mixins";
 
 .mainBlock {
   min-height: 100vh;
-  background: $bgSecondColor;
+  background: $bgColor;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .mainContainer {
+  @include container();
   min-height: 100%;
 
   text-align: center;
