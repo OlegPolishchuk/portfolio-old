@@ -2,7 +2,9 @@
 
 .header {
   height: 100vh;
-  background: $bgAsideColor;
+
+  background: center no-repeat;
+  background-size: cover;
 
   .aside {
     position: fixed;

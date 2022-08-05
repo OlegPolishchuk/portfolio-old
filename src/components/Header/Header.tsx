@@ -4,6 +4,7 @@ import {Nav} from "../Nav/Nav";
 import {Main} from "../Main/Main";
 import Photo from "../Photo/Photo";
 import {ToggleBtn} from "../../common/components/ToggleBtn/ToggleBtn";
+import backgroundURl from '../../assets/image/20-Most-Common-Work-from-Home-Job-Titles.jpg';
 
 const SHOW_NAV_VALUE = '55px';
 const HIDE_NAV_VALUE = '-250px';
@@ -11,6 +12,10 @@ const HIDE_NAV_VALUE = '-250px';
 export const Header = () => {
 
   const [visible, setVisible] = useState(false)
+
+    const backgroundStyle = {
+        backgroundImage: `url(${backgroundURl})`,
+    }
 
   const handleToggle = () => {
     setVisible(!visible)
@@ -24,7 +29,7 @@ export const Header = () => {
   }
 
   return (
-    <header className={s.header}>
+    <header className={s.header} style={backgroundStyle}>
       <aside className={s.aside}>
         <Photo/>
         <ToggleBtn toggle={handleToggle} />

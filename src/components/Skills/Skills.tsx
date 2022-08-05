@@ -4,8 +4,6 @@ import {Skill} from "./Skill/Skill";
 import Title from "../../common/components/title/Title";
 
 export const Skills = () => {
-    const descr = 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. ' +
-        'Lorem Ipsum has been the industry\'s'
 
     return (
         <section className={s.skillsBlock}>

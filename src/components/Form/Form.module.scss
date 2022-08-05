@@ -17,8 +17,8 @@
   outline: none;
 
   &:focus {
-    border: 1px solid $themeColor;
-    box-shadow: 0 0 5px rgba(36, 252, 175, 0.6);
+    //border: 1px solid $themeColor;
+    box-shadow: 0 0 5px rgba(36, 252, 175, 0.7);
   }
 }
 
@@ -31,9 +31,29 @@
   border-radius: 5px;
 
   &:focus {
-    border: 1px solid $themeColor;
-    box-shadow: 0 0 5px rgba(36, 252, 175, 0.6);
+    //border: 1px solid $themeColor;
+    box-shadow: 0 0 5px rgba(36, 252, 175, 0.7);
   }
+}
+
+.input, .textarea {
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill,
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover,
+  textarea:-webkit-autofill:focus,
+  select:-webkit-autofill,
+  select:-webkit-autofill:hover,
+  select:-webkit-autofill:focus {
+    border: 0;
+    -webkit-text-fill-color: #1f1f20;
+    -webkit-box-shadow: 0 0 0 1000px transparent inset;
+    transition: background-color 5000s ease-in-out 0s;
+    background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(0,174,255,0.04) 50%,rgba(255,255,255,0) 51%,rgba(0,174,255,0.03) 100%);
+  }
+
 }
 
 @media screen and (max-width: 450px) {
