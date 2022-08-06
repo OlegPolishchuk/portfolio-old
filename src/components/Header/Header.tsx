@@ -19,7 +19,6 @@ export const Header = () => {
 
   const handleToggle = () => {
     setVisible(!visible)
-    console.log('toggle')
   }
 
   const topValue = visible ? SHOW_NAV_VALUE : HIDE_NAV_VALUE;

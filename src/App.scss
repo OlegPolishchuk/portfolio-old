@@ -7,10 +7,13 @@
 
   list-style: none;
   text-decoration: none;
+
+  scroll-behavior: smooth;
 }
 
 .App {
   margin-left: 260px;
+
   section {
     &:nth-child(odd) {
       background: $bgColor;

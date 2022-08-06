@@ -8,7 +8,7 @@ const Contacts = () => {
   const formMarginTop = {'marginTop': '30px'}
 
   return (
-    <section className={s.contactsBlock}>
+    <section className={s.contactsBlock} id='contacts'>
       <div className={s.contacts}>
         <Title title={'Contacts'}/>
         <Form style={formMarginTop}/>

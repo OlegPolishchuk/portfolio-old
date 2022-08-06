@@ -6,7 +6,7 @@ import Title from "../../common/components/title/Title";
 export const Skills = () => {
 
     return (
-        <section className={s.skillsBlock}>
+        <section className={s.skillsBlock} id='skills'>
             <div className={s.skillsContainer}>
                 <Title title={'Skills'} />
                 <div className={s.skills}>

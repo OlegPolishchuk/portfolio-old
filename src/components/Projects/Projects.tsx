@@ -18,7 +18,7 @@ const Projects = () => {
     }
 
     return (
-        <section className={s.projectsBlock}>
+        <section className={s.projectsBlock} id='projects'>
             <div className={s.projects}>
                 <Title title={'Projects'}/>
                 <div className={s.projectsContainer}>

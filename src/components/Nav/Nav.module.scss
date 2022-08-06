@@ -1,7 +1,7 @@
 @import './src/common/styles/sass/variables.scss';
 
 .nav {
-  margin-top: 100px;
+  margin-top: 70px;
 
   display: flex;
   flex-direction: column;
@@ -11,8 +11,9 @@
 
   transition: top .3s ease;
 
-  a {
+  .link {
     margin-bottom: 30px;
+    cursor: pointer;
 
     color: $textColor;
     font-size: 20px;
@@ -22,6 +23,10 @@
     &:hover {
       color: $themeColor;
     }
+  }
+
+  .activeLink {
+    color: $themeColor;
   }
 }
 

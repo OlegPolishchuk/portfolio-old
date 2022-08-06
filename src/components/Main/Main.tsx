@@ -6,7 +6,7 @@ const TYPING_TEXT = ['Frontend Developer', 'JavaScript Developer']
 
 export const Main = () => {
     return (
-        <div className={s.mainBlock}>
+        <div className={s.mainBlock} id='main'>
            <div className={s.mainContainer}>
                <div className={s.title}>
                    <span>Welcome</span>
