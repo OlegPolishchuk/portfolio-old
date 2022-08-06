@@ -2,69 +2,73 @@
 @import "./src/common/styles/sass/mixins";
 
 .projectContainer {
+  display: flex;
+  flex-direction: column;
+
+  width: 350px;
+  margin: 20px 0;
+
+  background: $bgSecondColor;
+  border: 1px solid;
+  @media screen and (max-width: 440px) {
+    width: 100%;
+  }
+
+  .imgContainer {
+    height: 350px;
+    background: #C4C4C4;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    position: relative;
+
+    &::before {
+      content: '';
+      background: rgba(0, 0, 0, .4);
+
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+
+    .projectLink {
+
+      @include btn();
+      background: #e6fde6;
+      font-size: 20px;
+      font-weight: bold;
+
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  .projectDescription {
+    padding: 25px 20px;
     display: flex;
     flex-direction: column;
 
-    width: 350px;
-    margin: 20px 0;
+    .title {
+      @include text('Josefin Sans, sans-serif', 16px, 1.2);
 
-    background: $bgSecondColor;
-    border: 1px solid;
-    @media screen and (max-width: 440px) {
-        width: 100%;
+      letter-spacing: 1px;
+      margin: 0 0 5px;
     }
 
-    .imgContainer {
-        height: 350px;
-        background: #C4C4C4;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-
-        position: relative;
-        &::before {
-            content: '';
-            background: rgba(0,0,0,.2);
-
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-        }
-        .projectLink {
-            padding: 10px 20px;
-            background: #929292;
-            color: #000;
-            font-size: 20px;
-            font-weight: bold;
-
-            position: relative;
-            z-index: 1;
-        }
+    .description {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 400;
+      line-height: 1.8;
+      font-size: 12px;
+      color: #fff;
     }
-
-    .projectDescription {
-        padding: 25px 20px;
-        display: flex;
-        flex-direction: column;
-        .title {
-            @include text('Josefin Sans, sans-serif', 16px, 1.2);
-
-            letter-spacing: 1px;
-            margin: 0 0 5px;
-        }
-        .description {
-            font-family: 'Poppins', sans-serif;
-            font-weight: 400;
-            line-height: 1.8;
-            font-size: 12px;
-            color: #fff;
-        }
-    }
+  }
 }

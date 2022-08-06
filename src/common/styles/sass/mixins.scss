@@ -12,3 +12,19 @@
   margin: 0 auto;
   padding: 70px 0;
 }
+
+@mixin btn() {
+  padding: 12px 40px;
+  border-radius: 15px;
+  border: 2px solid $themeColor;
+  color: $themeColor;
+
+  font-size: 20px;
+  transition: all .2s ease;
+  box-shadow: 0 0 5px rgba(32,201,151,.8);
+
+  &:hover {
+    color: $textColor;
+    background: $themeColor;
+  }
+}
