@@ -4,7 +4,7 @@ import {Nav} from "../Nav/Nav";
 import {Main} from "../Main/Main";
 import Photo from "../Photo/Photo";
 import {ToggleBtn} from "../../common/components/ToggleBtn/ToggleBtn";
-import backgroundURl from '../../assets/image/20-Most-Common-Work-from-Home-Job-Titles.jpg';
+import backgroundURl from '../../assets/image/header-backgroumd.jpg';
 
 const SHOW_NAV_VALUE = '55px';
 const HIDE_NAV_VALUE = '-250px';
