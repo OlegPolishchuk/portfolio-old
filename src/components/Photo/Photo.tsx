@@ -18,6 +18,7 @@ const Photo = () => {
                     glareColor="#ffffff"
                     glarePosition="bottom"
                     glareBorderRadius="20px"
+                    tiltAxis='y'
                 >
                     <div className={s.photo} style={photoStyle}/>
                 </Tilt>

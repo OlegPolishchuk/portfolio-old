@@ -10,8 +10,8 @@ const MEDIUM_SCREEN = 752;
 
 export const Nav = ({style}: PropsType) => {
 
-    const height = window.innerHeight;
-    const offset = height > MEDIUM_SCREEN ? 0 : -20;
+    const width = window.outerWidth;
+    const offset = width > MEDIUM_SCREEN ? 0 : -20;
 
 
     const linkProps = {
