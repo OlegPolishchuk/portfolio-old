@@ -3,7 +3,7 @@
 
 .mainBlock {
   min-height: 100vh;
-  background: rgba(33,37,41, .7);
+  background: rgba(33, 37, 41, .7);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,7 +20,11 @@
   color: $textColor;
 
   span {
-    font-size: 28px;
+    font-size: 32px;
+
+    &:nth-child(2) {
+      font-size: 34px;
+    }
   }
 
   h1 {
@@ -31,13 +35,18 @@
   p {
     font-size: 28px;
   }
+
 }
 
 @media screen and (max-width: 752px) {
   .mainBlock {
-    margin-top: 70px;
-    min-height: calc(100vh - 70px);
+    min-height: 100vh;
+  }
 
+  .mainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .title {

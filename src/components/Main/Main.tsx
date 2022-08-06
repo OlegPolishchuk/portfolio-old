@@ -1,14 +1,17 @@
 import React from "react";
 import s from './Main.module.scss'
+import ReactTypingEffect from "react-typing-effect";
+
+const TYPING_TEXT = ['Frontend Developer', 'JavaScript Developer']
 
 export const Main = () => {
     return (
         <div className={s.mainBlock}>
            <div className={s.mainContainer}>
                <div className={s.title}>
-                   <span>Hi there</span>
-                   <h1>I am Jeffrey Aaron</h1>
-                   <p>Frontend Developer</p>
+                   <span>Welcome</span>
+                   <h1>I am Polishchuk Oleg</h1>
+                   <ReactTypingEffect text={TYPING_TEXT} />
                </div>
            </div>
         </div>
