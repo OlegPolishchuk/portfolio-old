@@ -11,6 +11,10 @@
   padding: 8px;
   margin-bottom: 20px;
 
+  background: $bgInputsColor;
+  color: $textColor;
+  font-size: 18px;
+
   border-radius: 5px;
   border: 1px solid transparent;
 
@@ -27,8 +31,13 @@
   resize: none;
   min-height: 120px;
 
+  font-size: 18px;
+
   outline: none;
   border-radius: 5px;
+  border: none;
+  background: $bgInputsColor;
+  color: $textColor;
 
   &:focus {
     //border: 1px solid $themeColor;
