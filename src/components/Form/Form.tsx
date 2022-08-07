@@ -1,18 +1,19 @@
-import React, {CSSProperties} from 'react';
-import s from './Form.module.scss'
+import React, { CSSProperties, ReactElement } from 'react';
+
+import s from './Form.module.scss';
 
 type PropsType = {
-  style?: CSSProperties
-}
+    style?: CSSProperties;
+};
 
-const Form = ({style}: PropsType) => {
-  const formStyle = style;
+const Form = ({ style }: PropsType): ReactElement => {
+    const formStyle = style;
 
     return (
         <form className={s.form} style={formStyle}>
-            <input className={s.input}/>
-            <input className={s.input}/>
-            <textarea className={s.textarea}/>
+            <input className={s.input} />
+            <input className={s.input} />
+            <textarea className={s.textarea} />
         </form>
     );
 };

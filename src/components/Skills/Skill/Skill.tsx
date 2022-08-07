@@ -1,35 +1,30 @@
-import React from "react";
-import s from './Skill.module.scss'
+import React, { ReactElement } from 'react';
+
+import s from './Skill.module.scss';
 
 type SkillPropsType = {
-    title: string
+    title: string;
     // description: string
-    progress: number
-}
+    progress: number;
+};
 
-export const Skill: React.FC<SkillPropsType> = ({title, progress}) => {
-    // return (
-    //     <div className={s.skillBlock}>
-    //         <div className={s.icon}>
-    //         </div>
-    //         <h3 className={s.skillTitle}>{props.title}</h3>
-    //         <span className={s.description}>{props.description}</span>
-    //     </div>
-    // )
+const MAX_PROGRESS = 100;
 
-  const progressStyle = {
-    width: `${progress}%`,
-    borderRadius: progress === 100 ? '5px' : '5px 0 0 5px',
-  }
-  return (
-    <div className={s.skillWrapper}>
-      <div className={s.skillTitle}>
-        <p>{title}</p>
-        <span>{`${progress}%`}</span>
-      </div>
-      <div className={s.progressBlock}>
-        <div className={s.progress} style={progressStyle}></div>
-      </div>
-    </div>
-  )
-}
+export const Skill: React.FC<SkillPropsType> = ({ title, progress }): ReactElement => {
+    const progressStyle = {
+        width: `${progress}%`,
+        borderRadius: progress === MAX_PROGRESS ? '5px' : '5px 0 0 5px',
+    };
+
+    return (
+        <div className={s.skillWrapper}>
+            <div className={s.skillTitle}>
+                <p>{title}</p>
+                <span>{`${progress}%`}</span>
+            </div>
+            <div className={s.progressBlock}>
+                <div className={s.progress} style={progressStyle} />
+            </div>
+        </div>
+    );
+};

@@ -1,20 +1,22 @@
-import React from 'react';
-import s from './Project.module.scss'
+import React, { ReactElement } from 'react';
+
+import s from './Project.module.scss';
 
 type PropsType = {
-    title: string,
-    description: string,
-    style?: React.CSSProperties
-}
+    title: string;
+    description: string;
+    style?: React.CSSProperties;
+};
 
-const Project: React.FC<PropsType> = ({title, description, style}) => {
-
-    const finalStyle =  style ? style : {}
+const Project: React.FC<PropsType> = ({ title, description, style }): ReactElement => {
+    const finalStyle = style || {};
 
     return (
         <div className={s.projectContainer}>
             <div className={s.imgContainer} style={finalStyle}>
-                <a href={''} className={s.projectLink}>Project</a>
+                <button type="button" className={s.projectLink}>
+                    Project
+                </button>
             </div>
             <div className={s.projectDescription}>
                 <h3 className={s.title}>{title}</h3>

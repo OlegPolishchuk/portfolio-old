@@ -1,23 +1,24 @@
-import React from 'react';
-import s from './Social.module.scss'
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faGithub} from '@fortawesome/free-brands-svg-icons'
+import React, { ReactElement } from 'react';
 
+import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-
-import {IconDefinition} from "@fortawesome/fontawesome-svg-core";
+import s from './Social.module.scss';
 
 type PropsType = {
-  icon: IconDefinition
-  className?: string
-}
+    icon: IconDefinition;
+    className?: string;
+    href: string;
+};
 
-const Social = ({icon, className}: PropsType) => {
+const Social = ({ icon, className, href }: PropsType): ReactElement => {
+    const totalClassName = className || '';
 
-  const totalClassName = className ? className : '';
     return (
         <div className={s.social}>
-          <a href={'#'} className={`${totalClassName}`}><FontAwesomeIcon icon={icon}/></a>
+            <a href={href} className={`${totalClassName}`}>
+                <FontAwesomeIcon icon={icon} />
+            </a>
         </div>
     );
 };

@@ -1,12 +1,12 @@
-import React from 'react';
-import s from './Title.module.scss'
+import React, { ReactElement } from 'react';
 
+import s from './Title.module.scss';
 
 type PropsType = {
-    title: string
-}
+    title: string;
+};
 
-const Title: React.FC<PropsType> = ({title}) => {
+const Title: React.FC<PropsType> = ({ title }): ReactElement => {
     return (
         <div className={s.title}>
             <h2>{title}</h2>

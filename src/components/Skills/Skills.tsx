@@ -1,22 +1,22 @@
-import React from "react";
-import s from './Skills.module.scss'
-import {Skill} from "./Skill/Skill";
-import Title from "../../common/components/title/Title";
+import React, { ReactElement } from 'react';
 
-export const Skills = () => {
+import Title from '../../common/components/title/Title';
+import { skills } from '../../data/data';
 
+import { Skill } from './Skill/Skill';
+import s from './Skills.module.scss';
+
+export const Skills = (): ReactElement => {
     return (
-        <section className={s.skillsBlock} id='skills'>
+        <section className={s.skillsBlock} id="skills">
             <div className={s.skillsContainer}>
-                <Title title={'Skills'} />
+                <Title title="Skills" />
                 <div className={s.skills}>
-                    <Skill title={'JS'} progress={90}/>
-                    <Skill title={'react'} progress={80}/>
-                    <Skill title={'redux'} progress={70}/>
-                    <Skill title={'html'} progress={90}/>
-                    <Skill title={'css'} progress={100}/>
+                    {skills.map(({ title, progress, id }) => (
+                        <Skill title={title} progress={progress} key={id} />
+                    ))}
                 </div>
             </div>
         </section>
-    )
-}
+    );
+};
