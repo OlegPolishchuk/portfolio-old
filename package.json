@@ -4,6 +4,7 @@
   "homepage": "https://OlegPolishchuk.github.io/portfolio",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.10.0",
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "@fortawesome/free-brands-svg-icons": "^6.1.1",
     "@fortawesome/free-regular-svg-icons": "^6.1.1",
@@ -20,6 +21,7 @@
     "@types/react-typing-effect": "^2.0.3",
     "gh-pages": "^3.2.3",
     "react": "^18.0.0",
+    "react-awesome-reveal": "^4.0.0",
     "react-dom": "^18.0.0",
     "react-parallax-tilt": "^1.7.51",
     "react-scripts": "5.0.1",
@@ -51,7 +53,7 @@
       "prettier --write"
     ]
   },
-    "browserslist": {
+  "browserslist": {
     "production": [
       ">0.2%",
       "not dead",
@@ -67,13 +69,13 @@
     "@typescript-eslint/eslint-plugin": "^5.30.7",
     "@typescript-eslint/parser": "^5.30.7",
     "eslint": "^8.21.0",
-    "eslint-config-prettier": "^8.5.0",
     "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
     "husky": "^8.0.1",
     "prettier": "^2.7.1"
   }

@@ -1,4 +1,5 @@
 @import './src/common/styles/sass/variables';
+@import './src/common/styles/sass/mixins';
 
 .form {
   width: 350px;
@@ -7,13 +8,17 @@
   flex-direction: column;
 }
 
+.container {
+  width: 100%;
+}
+
 .input {
   padding: 8px;
   margin-bottom: 20px;
 
   background: $bgInputsColor;
-  color: $textColor;
-  font-size: 18px;
+  color: $textInputColor;
+  font-size: 16px;
 
   border-radius: 5px;
   border: 1px solid transparent;
@@ -31,13 +36,13 @@
   resize: none;
   min-height: 120px;
 
-  font-size: 18px;
+  font-size: 16px;
 
   outline: none;
   border-radius: 5px;
   border: none;
   background: $bgInputsColor;
-  color: $textColor;
+  color: $textInputColor;
 
   &:focus {
     //border: 1px solid $themeColor;
@@ -64,6 +69,13 @@
     background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(0,174,255,0.04) 50%,rgba(255,255,255,0) 51%,rgba(0,174,255,0.03) 100%);
   }
 
+}
+
+
+.btnForm {
+  @include btn();
+
+  margin-top: 30px;
 }
 
 @media screen and (max-width: 450px) {

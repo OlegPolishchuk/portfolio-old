@@ -1,5 +1,7 @@
 import React, { ReactElement } from 'react';
 
+import { Slide } from 'react-awesome-reveal';
+
 import social from '../../assets/image/social-network-background-with-icons_23-2147497535.jpg';
 import todo from '../../assets/image/todolist.jpg';
 import Title from '../../common/components/title/Title';
@@ -21,16 +23,30 @@ const Projects = (): ReactElement => {
             <div className={s.projects}>
                 <Title title="Projects" />
                 <div className={s.projectsContainer}>
-                    <Project
-                        title="Social Network"
-                        description="some description"
-                        style={socialNW}
-                    />
-                    <Project
-                        title="Todo list"
-                        description="some description"
-                        style={todoList}
-                    />
+                    <Slide
+                        direction="up"
+                        duration={700}
+                        triggerOnce
+                        className={s.container}
+                    >
+                        <Project
+                            title="Social Network"
+                            description="some description"
+                            style={socialNW}
+                        />
+                    </Slide>
+                    <Slide
+                        direction="up"
+                        duration={700}
+                        triggerOnce
+                        className={s.container}
+                    >
+                        <Project
+                            title="Todo list"
+                            description="some description"
+                            style={todoList}
+                        />
+                    </Slide>
                 </div>
             </div>
         </section>

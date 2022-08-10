@@ -1,4 +1,5 @@
 @import "./src/common/styles/sass/mixins";
+@import "./src/common/styles/sass/variables";
 
 .contactsBlock {
   background: #FFE2E2;
@@ -17,8 +18,11 @@
   background: #D8D8D8;
 }
 
-.btnForm {
-  @include btn();
-
-  margin-top: 30px;
+@media screen and(max-width: $mediumScreen) {
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }

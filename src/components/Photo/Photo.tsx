@@ -13,16 +13,10 @@ const Photo = (): ReactElement => {
 
     return (
         <div className={s.photoContainer}>
-            <Tilt
-                glareEnable
-                glareMaxOpacity={0.8}
-                glareColor="#ffffff"
-                glarePosition="bottom"
-                glareBorderRadius="20px"
-                tiltAxis="y"
-            >
+            <Tilt tiltAxis="y">
                 <div className={s.photo} style={photoStyle} />
             </Tilt>
+
             <h3 className={s.title}>Polishchuk Oleg</h3>
         </div>
     );

@@ -1,5 +1,7 @@
 import React, { ReactElement } from 'react';
 
+import { Fade } from 'react-awesome-reveal';
+
 import Title from '../../common/components/title/Title';
 import Form from '../Form/Form';
 
@@ -12,10 +14,9 @@ const Contacts = (): ReactElement => {
         <section className={s.contactsBlock} id="contacts">
             <div className={s.contacts}>
                 <Title title="Contacts" />
-                <Form style={formMarginTop} />
-                <button type="button" className={s.btnForm}>
-                    Send
-                </button>
+                <Fade direction="up" duration={700} triggerOnce className={s.container}>
+                    <Form style={formMarginTop} />
+                </Fade>
             </div>
         </section>
     );
