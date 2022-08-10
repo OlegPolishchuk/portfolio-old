@@ -14,7 +14,7 @@ const Contacts = (): ReactElement => {
         <section className={s.contactsBlock} id="contacts">
             <div className={s.contacts}>
                 <Title title="Contacts" />
-                <Fade direction="up" duration={700} triggerOnce className={s.container}>
+                <Fade direction="up" duration={800} triggerOnce className={s.container}>
                     <Form style={formMarginTop} />
                 </Fade>
             </div>

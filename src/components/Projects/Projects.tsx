@@ -25,7 +25,7 @@ const Projects = (): ReactElement => {
                 <div className={s.projectsContainer}>
                     <Slide
                         direction="up"
-                        duration={700}
+                        duration={800}
                         triggerOnce
                         className={s.container}
                     >
@@ -37,7 +37,7 @@ const Projects = (): ReactElement => {
                     </Slide>
                     <Slide
                         direction="up"
-                        duration={700}
+                        duration={800}
                         triggerOnce
                         className={s.container}
                     >

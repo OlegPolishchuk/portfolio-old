@@ -11,7 +11,7 @@ import s from './Skills.module.scss';
 export const Skills = (): ReactElement => {
     return (
         <section className={s.skillsBlock} id="skills">
-            <Fade direction="up" duration={700} triggerOnce>
+            <Fade direction="up" duration={800} triggerOnce>
                 <div className={s.skillsContainer}>
                     <Title title="Skills" />
                     <div className={s.skills}>
