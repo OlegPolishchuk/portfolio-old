@@ -35,6 +35,12 @@
     }
   }
 
+  .faTelegramPlane {
+    &:hover {
+      color: $iconTelegramColor
+    }
+  }
+
   .faEnvelope {
     &:hover {
       color: $iconGmailColor;

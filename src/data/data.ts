@@ -10,6 +10,7 @@ export const skills = [
 
 export const socials = {
     faGithub: 'https://github.com/OlegPolishchuk',
-    faLinkedinIn: 'www.linkedin.com/in/polishchuk-oleg',
+    faLinkedinIn: 'https://www.linkedin.com/in/polishchuk-oleg/',
     mail: 'oleg.makkorm@gmail.com',
+    telegram: 'https://t.me/OlegMakkorm',
 };

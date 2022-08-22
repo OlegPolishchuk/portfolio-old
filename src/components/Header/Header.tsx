@@ -33,7 +33,7 @@ export const Header = (): ReactElement => {
             <aside className={s.aside}>
                 <Photo />
                 <ToggleBtn toggle={handleToggle} />
-                <Nav style={style} />
+                <Nav style={style} callback={handleToggle} />
             </aside>
             <Main />
         </header>

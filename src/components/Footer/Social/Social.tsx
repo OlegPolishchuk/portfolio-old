@@ -16,7 +16,12 @@ const Social = ({ icon, className, href }: PropsType): ReactElement => {
 
     return (
         <div className={s.social}>
-            <a href={href} className={`${totalClassName}`}>
+            <a
+                href={href}
+                target="_blank"
+                className={`${totalClassName}`}
+                rel="noreferrer"
+            >
                 <FontAwesomeIcon icon={icon} />
             </a>
         </div>

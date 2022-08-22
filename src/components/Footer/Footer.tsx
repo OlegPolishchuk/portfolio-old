@@ -1,7 +1,10 @@
 import React, { ReactElement } from 'react';
 
-import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+import {
+    faGithub,
+    faLinkedinIn,
+    faTelegramPlane,
+} from '@fortawesome/free-brands-svg-icons';
 
 import { socials } from '../../data/data';
 
@@ -24,9 +27,9 @@ const Footer = (): ReactElement => {
                         href={socials.faLinkedinIn}
                     />
                     <Social
-                        icon={faEnvelope}
-                        className="faEnvelope"
-                        href={socials.mail}
+                        icon={faTelegramPlane}
+                        className="faTelegramPlane"
+                        href={socials.telegram}
                     />
                 </div>
                 <span className={s.copyright}>
